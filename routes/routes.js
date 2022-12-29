@@ -1,0 +1,10 @@
+const router = require('express').Router();
+const getList = require('../controllers/todolistcontroller').getList;
+const saveList = require('../controllers/todolistcontroller').saveList;
+const deleteList = require('../controllers/todolistcontroller').deleteList;
+const updateList = require('../controllers/todolistcontroller').updateList;
+router.get('/getList', getList);
+router.post('/saveList', saveList);
+router.post('/deleteList', deleteList);
+router.post('/updateList/', updateList);
+module.exports = router;

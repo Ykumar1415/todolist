@@ -1,0 +1,64 @@
+*{
+    margin: 0; 
+}
+.box{
+    color: white;
+    margin: 2rem; 
+    height: 300px; width: 500px ;
+    
+    background-color: rebeccapurple;
+    display : flex; 
+    justify-content: space-between; 
+    align-items: center;
+ /* height : clamp( 100px , 50% , 300px );min, widthofscreenjhaseminwidthhogi, max */
+flex-direction: column;
+border-radius: 1rem;;
+flex-shrink: 3;
+}
+.inputButton{
+
+    margin-bottom : 7rem; 
+    display:flex; 
+    flex-direction: column;
+    gap:12px; 
+    flex-shrink: 1;
+    font-weight: bold;
+}
+input {
+    font: inherit;
+    padding: 0.5rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    width: 20rem;    color :rgb(107, 57, 57);
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 1;
+}
+button {
+    font: inherit;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    border: 1px solid #40005d;
+    background-color: #40005d;
+    color: white;
+    border-radius: 12px;
+    /* margin-right: 1rem; */
+    font-weight: bold;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 1;
+}
+button:hover{
+background-color: #6d039e;
+}
+@media screen and (max-width: 560px){
+    .box{
+        width: 80%;
+    }
+    input{
+        width: 15rem;
+    }
+}
+    
