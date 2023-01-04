@@ -9,7 +9,6 @@ app.use(cors());
 let uri = process.env.Uri; 
 app.use(bodyParser.json());
 app.use("/", Routes);
-// uri = process.env.MONGO_URI;
 mongoose
   .connect(uri)
   .then((result) => {
